@@ -63,18 +63,20 @@ Square::Square(int x_c, int y_c, int len)
 		 }
 		 else
 		 {
-			 if (i < x - length)
-			 {
-				 cout << " ";
-			 }
-			 else
-			 {
-				 for (int j = 0; j < length; j++)
+			 
+			 
+				 for (int j = 0; j < x+length; j++)
 				 {
-					 cout << "*";
+					 if (j < x)
+					 {
+						 cout << " ";
+					 }
+					 else {
+						 cout << "*";
+					 }
 				 }
 				 cout << endl;
-			 }
+			 
 		 }
 	 }
  }
@@ -120,3 +122,4 @@ int main()
 
 
 }
+
